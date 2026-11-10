@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Nath que fez · Em breve</title>
+<meta name="description" content="Doces e bolos artesanais feitos à mão, em Fortaleza. Site novo em breve; o cardápio já está no ar.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600&family=DM+Sans:opsz,wght@9..40,400;9..40,500&family=Dancing+Script:wght@700&family=Josefin+Sans:wght@600&display=swap">
+<style>
+:root { --cacau: #3B1E10; --dourado: #D4B483; --creme: #F6EBDA; --muted: #CDB896; --whatsapp: #0F7A5C; }
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body { display: grid; place-items: center; padding: 32px 20px; background: var(--cacau); color: var(--creme); font: 400 17px/1.55 "DM Sans", system-ui, sans-serif; text-align: center; }
+main { max-width: 440px; display: grid; gap: 22px; justify-items: center; }
+.sig { font: 700 clamp(44px, 12vw, 64px)/1 "Dancing Script", cursive; color: var(--dourado); }
+.eyebrow { font: 600 13px/1.2 "Josefin Sans", system-ui, sans-serif; letter-spacing: .18em; text-transform: uppercase; color: var(--muted); }
+h1 { margin: 0; font: 600 clamp(28px, 7vw, 38px)/1.15 "Cormorant Garamond", Georgia, serif; }
+p { margin: 0; color: var(--muted); }
+.acoes { display: grid; gap: 12px; width: 100%; }
+.btn { display: block; padding: 14px 20px; border-radius: 12px; font-weight: 500; text-decoration: none; }
+.btn-primary { background: var(--dourado); color: var(--cacau); }
+.btn-wa { border: 1px solid #5A3220; color: var(--creme); }
+.btn:focus-visible { outline: 2px solid var(--dourado); outline-offset: 3px; }
+.ig { color: var(--dourado); }
+</style>
+</head>
+<body>
+<main>
+  <div class="sig" aria-label="Nath que fez">Nath que fez</div>
+  <span class="eyebrow">Doces artesanais · Fortaleza</span>
+  <h1>O site novo chega em breve.</h1>
+  <p>Enquanto isso, o cardápio já está no ar: escolha, pague no Pix e retire no dia.</p>
+  <div class="acoes">
+    <a class="btn btn-primary" href="/cardapio/">Ver o cardápio</a>
+    <a class="btn btn-wa" href="https://wa.me/5585992438953" target="_blank" rel="noopener">Falar no WhatsApp</a>
+  </div>
+  <p><a class="ig" href="https://instagram.com/nathquefez" target="_blank" rel="noopener">@nathquefez</a></p>
+</main>
+</body>
+</html>
