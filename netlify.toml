@@ -1,0 +1,27 @@
+# Netlify: site principal (nathquefez.com.br).
+# Enquanto o site não é lançado, publica só a página "Em breve".
+# No lançamento: troque publish para "." e tire o X-Robots-Tag.
+[build]
+  publish = "em-breve"
+
+# O cardápio fica no projeto PEDIDOS; aqui ele aparece em nathquefez.com.br/cardapio.
+[[redirects]]
+  from = "/cardapio"
+  to = "/cardapio/"
+  status = 301
+[[redirects]]
+  from = "/cardapio/admin.html"
+  to = "https://pedidos.nathquefez.com.br/cardapio/admin.html"
+  status = 302
+  force = true
+[[redirects]]
+  from = "/cardapio/*"
+  to = "https://nathquefez-pedidos.netlify.app/cardapio/:splat"
+  status = 200
+  force = true
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Robots-Tag = "noindex"
+    Referrer-Policy = "strict-origin-when-cross-origin"
