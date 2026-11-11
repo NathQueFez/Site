@@ -5,10 +5,8 @@
   publish = "em-breve"
 
 # O cardápio fica no projeto PEDIDOS; aqui ele aparece em nathquefez.com.br/cardapio.
-[[redirects]]
-  from = "/cardapio"
-  to = "/cardapio/"
-  status = 301
+# Sem regra "/cardapio" -> "/cardapio/": o Netlify ignora a barra final ao
+# comparar regras, então ela redirecionava para si mesma (ERR_TOO_MANY_REDIRECTS).
 [[redirects]]
   from = "/cardapio/admin.html"
   to = "https://pedidos.nathquefez.com.br/cardapio/admin.html"
@@ -16,7 +14,7 @@
   force = true
 [[redirects]]
   from = "/cardapio/*"
-  to = "https://nathquefez-pedidos.netlify.app/cardapio/:splat"
+  to = "https://pedidos.nathquefez.com.br/cardapio/:splat"
   status = 200
   force = true
 
