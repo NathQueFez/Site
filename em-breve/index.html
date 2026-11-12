@@ -4,10 +4,10 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Nath que fez · Doces artesanais em Fortaleza</title>
-<meta name="description" content="Bolos e doces artesanais feitos à mão em Fortaleza. Tem doce pronto pra hoje e bolo sob encomenda. Pague no Pix ou no cartão.">
+<meta name="description" content="Bolos e doces artesanais feitos à mão em Fortaleza. Bolo do dia a dia pronto hoje, e doces e bolos especiais sob encomenda. Pix ou cartão.">
 <meta name="theme-color" content="#2A150B">
 <meta property="og:title" content="Nath que fez · Doces artesanais">
-<meta property="og:description" content="Mais que doces, momentos especiais. Veja o cardápio e faça seu pedido.">
+<meta property="og:description" content="Mais que doces, momentos especiais. Faça seu pedido pelo cardápio.">
 <meta property="og:image" content="/fotos/01-calda.webp">
 <link rel="preload" as="image" href="/fotos/01-calda.webp" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -125,9 +125,10 @@ h1 em { font-style: italic; color: var(--dourado); }
   background: rgba(42,21,11,.55); border: 1px solid rgba(212,180,131,.35);
   -webkit-backdrop-filter: blur(6px); backdrop-filter: blur(6px);
 }
+@media (max-width: 899px) { .selos { display: grid; grid-template-columns: auto auto; justify-content: center; } .selos li { white-space: nowrap; letter-spacing: .1em; padding: 9px 11px 8px; } }
 .selos li.hoje { color: #1E2A10; background: var(--pistache); border-color: var(--pistache); }
 
-.acoes { display: grid; gap: 10px; width: 100%; max-width: 420px; margin-top: 22px; }
+.acoes { display: grid; width: 100%; max-width: 360px; margin-top: 24px; }
 .btn {
   display: flex; align-items: center; justify-content: center; gap: 10px;
   min-height: 52px; padding: 14px 22px; border-radius: 999px;
@@ -138,9 +139,6 @@ h1 em { font-style: italic; color: var(--dourado); }
 .btn:focus-visible { outline: 2px solid var(--dourado); outline-offset: 3px; }
 .btn-primary { background: var(--dourado); color: var(--cacau); box-shadow: 0 10px 30px -10px rgba(212,180,131,.6); }
 .btn-primary:hover { background: #DFC398; }
-.btn-wa { background: var(--whatsapp); color: #fff; }
-.btn-wa:hover { background: #12896A; }
-.btn svg { width: 20px; height: 20px; flex: none; }
 
 .rodape { margin-top: 22px; font-size: 14px; color: var(--muted); }
 .rodape a { color: var(--dourado); text-underline-offset: 3px; }
@@ -165,7 +163,7 @@ h1 em { font-style: italic; color: var(--dourado); }
     padding: 120px 4vw 60px max(48px, 7vw);
   }
   .selos { justify-content: flex-start; }
-  .acoes { grid-template-columns: 1fr 1fr; max-width: 520px; }
+  .acoes { max-width: 300px; }
   h1 { max-width: 13ch; }
 }
 
@@ -212,18 +210,15 @@ h1 em { font-style: italic; color: var(--dourado); }
   <p class="sig" aria-label="Nath que fez">Nath que fez</p>
   <span class="eyebrow">Doces artesanais · Fortaleza</span>
   <h1>Mais que doces, <em>momentos especiais.</em></h1>
-  <p class="apoio">Tem doce pronto pra hoje e bolo sob encomenda pro seu dia. Você busca aqui ou chama seu motoboy pelo Uber ou 99.</p>
+  <p class="apoio">Tem bolo do dia a dia pronto hoje, e doces e bolos especiais sob encomenda. Você busca aqui ou chama seu motoboy pelo Uber ou 99.</p>
   <ul class="selos" aria-label="Como funciona">
-    <li class="hoje">Pronta entrega</li>
+    <li class="hoje">Bolo pronto hoje</li>
+    <li>Doces sob encomenda</li>
     <li>Pix ou cartão</li>
     <li>Retirada ou motoboy</li>
   </ul>
   <div class="acoes">
-    <a class="btn btn-primary" href="/cardapio/">Ver cardápio</a>
-    <a class="btn btn-wa" href="https://wa.me/5585992438953" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2c-1.5 0-3-.4-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>
-      Pedir no WhatsApp
-    </a>
+    <a class="btn btn-primary" href="/cardapio/">Fazer meu pedido</a>
   </div>
   <p class="rodape">Site novo chegando 🤎 · <a href="https://instagram.com/nathquefez" target="_blank" rel="noopener">@nathquefez</a></p>
 </main>
